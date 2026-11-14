@@ -1,10 +1,6 @@
 # ARC Explorer technical report
 
-- [PDF](ARC-Explorer.pdf)
-- [ACM LaTeX](ARC-Explorer.tex)
-- [Markdown](TECHNICAL_PAPER.md)
-- [BibTeX references](references.bib)
-- [Screenshot illustrations](figures/)
+**Technical paper:** [PDF](ARC-Explorer.pdf) · [LaTeX](ARC-Explorer.tex) · [Markdown](TECHNICAL_PAPER.md) · [BibTeX references](references.bib) · [Screenshot illustrations](figures/)
 
 William Taggart, Modern and Classical Languages and Literatures, Virginia Tech. Email: wtaggart@vt.edu.
 

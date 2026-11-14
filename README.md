@@ -14,7 +14,7 @@ Apple Silicon · macOS 15+ · approximately 1.9 MB compressed. Unzip the downloa
 
 Developer ID signed, accepted by Apple's notarization service, and stapled. [Release verification](RELEASE_STATUS.md).
 
-**Technical paper:** [PDF](paper/ARC-Explorer.pdf) · [ACM LaTeX](paper/ARC-Explorer.tex) · [Markdown](paper/TECHNICAL_PAPER.md) · [references](paper/references.bib)
+**Technical paper:** [PDF](paper/ARC-Explorer.pdf) · [LaTeX](paper/ARC-Explorer.tex) · [Markdown](paper/TECHNICAL_PAPER.md) · [references](paper/references.bib)
 
 
 ## Five sections
