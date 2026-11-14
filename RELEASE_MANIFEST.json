@@ -15,8 +15,9 @@
   "verified_at_utc": "2026-11-14T04:37:25.307989+00:00",
   "sha256": {
     "downloads/ARC-Explorer-v0.1-macOS-arm64.zip": "d191bfec4f50e94616f619a626f0e57a88a6b19d2d2690a54b339c33e83cc72d",
-    "paper/ARC-Explorer.pdf": "5e091f51e72d36a3c70290559fb723ba0639605d216faa067f56e65bd693fc5f",
-    "paper/ARC-Explorer.tex": "fb6a31a57f0821036d0e9423640116537b57b8a8799cdab338191059a87a7915",
-    "paper/TECHNICAL_PAPER.md": "fd22dc4ea4c7aa4f4d83eb89df1c805d13e33d781fdde1ee50cfb43e0fbd82d9"
-  }
+    "paper/ARC-Explorer.pdf": "6eac83d0dbfd98ece1a1982091dab19e563bf352eaf4e12b83340c08c8e58d63",
+    "paper/ARC-Explorer.tex": "93a5ba6cf955ded10e171d59cba145f4c5fa8d90cde280e24c80a36423bc6e21",
+    "paper/TECHNICAL_PAPER.md": "7b952e0db040b07f71ddb36fd31927cd4afcdade159b012f65f5f4f09b5bcaf5"
+  },
+  "documentation_updated_at_utc": "2026-11-14T04:47:31.080033+00:00"
 }

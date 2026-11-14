@@ -71,15 +71,15 @@ An opened file is associated with a revision derived from its content hash, devi
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/02-resources.png}
-\caption{Resources section with allocation and date controls. The offline view contains no account balance or fabricated usage results.}
-\Description{Resources section with allocation and date controls. The offline view contains no account balance or fabricated usage results.}
+\caption{Cropped Resources detail with allocation and date controls. The offline view contains no account balance or fabricated usage results.}
+\Description{Cropped Resources detail with allocation and date controls. The offline view contains no account balance or fabricated usage results.}
 \end{figure}
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/06-file-editor.png}
-\caption{The remote file browser and lightweight text editor. This offline view illustrates the editing controls, not an active file transaction.}
-\Description{The remote file browser and lightweight text editor. This offline view illustrates the editing controls, not an active file transaction.}
+\caption{Cropped detail of the remote file browser and lightweight text editor. This offline view illustrates the editing controls, not an active file transaction.}
+\Description{Cropped detail of the remote file browser and lightweight text editor. This offline view illustrates the editing controls, not an active file transaction.}
 \end{figure}
 
 \section{Jobs + software: resource requests and reproducible scripts}
@@ -118,8 +118,8 @@ For an existing service on an allocated compute node, a tunnel maps a local loop
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/04-sessions.png}
-\caption{Sessions with the full-width Login Node Terminal and its red compute warning. The terminal is disconnected in this capture.}
-\Description{Sessions with the full-width Login Node Terminal and its red compute warning. The terminal is disconnected in this capture.}
+\caption{Sessions with the full-width Login Node Terminal controls, upper terminal pane, and red compute warning. The terminal is disconnected in this capture.}
+\Description{Sessions with the full-width Login Node Terminal controls, upper terminal pane, and red compute warning. The terminal is disconnected in this capture.}
 \end{figure}
 
 \section{Help: command reference and ARC-hosted language models}
@@ -145,7 +145,7 @@ The v0.1 release build passes 28 Python tests and two Swift terminal tests. Pyth
 
 The native tests verify login-terminal request construction without an allocation requirement and exercise a real local pseudo-terminal: interactive input, a requested terminal size of 42 rows by 140 columns, and process exit. These are targeted regression checks. They do not prove all escape-sequence behavior, SSH authentication combinations, remote policy compliance, or embedded-browser compatibility.
 
-The six figures are captures of the application interface, all captured from the signed release build. They deliberately show offline states and omit live account results and credentials. Screenshots document layout and available controls; they are not measurements of scheduler or API success. Earlier development included remote smoke checks, but this report's quantified release evidence is limited to the test suite stated above.
+The six figures are captures of the application interface, all captured from the signed release build. The images are cropped to remove unused space and pointer/hover overlays. They deliberately show offline states and omit live account results and credentials. Screenshots document layout and available controls; they are not measurements of scheduler or API success. Earlier development included remote smoke checks, but this report's quantified release evidence is limited to the test suite stated above.
 
 The source distribution includes the Swift application, remote helper, native askpass helper, icon generator, tests, build script, vendored terminal source and license, and this report in Markdown, LaTeX, and PDF. SwiftTerm is pinned to v1.20.0 with the documented clipboard-read change. The build targets arm64 and macOS 15.0; the release was built and tested on a newer macOS host, not separately runtime-qualified on every supported OS release.
 

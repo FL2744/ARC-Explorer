@@ -55,9 +55,9 @@ The lightweight editor opens UTF-8 text files up to 1 MiB, supports new files an
 
 An opened file is associated with a revision derived from its content hash, device, inode, and modification time. Before replacement, the helper compares the current revision with the expected revision, writes a temporary file in the destination directory, preserves supported permissions and group metadata, flushes it, checks again, and replaces the destination. A detected conflict preserves the remote version. This is optimistic conflict detection; it is not a server-side lock or a proof that all concurrent-writer races are impossible.
 
-![Resources section with allocation and date controls. The offline view contains no account balance or fabricated usage results.](figures/02-resources.png)
+![Cropped Resources detail with allocation and date controls. The offline view contains no account balance or fabricated usage results.](figures/02-resources.png)
 
-![The remote file browser and lightweight text editor. This offline view illustrates the editing controls, not an active file transaction.](figures/06-file-editor.png)
+![Cropped detail of the remote file browser and lightweight text editor. This offline view illustrates the editing controls, not an active file transaction.](figures/06-file-editor.png)
 
 ## 5. Jobs + software: resource requests and reproducible scripts
 
@@ -87,7 +87,7 @@ Web / Jupyter embeds ARC web applications through WebKit. Open OnDemand provides
 
 For an existing service on an allocated compute node, a tunnel maps a local loopback port through SSH to a user-specified compute host and remote port. Host and port inputs are validated, and the local listener binds to 127.0.0.1. The user must first start the service in the allocation and supply the appropriate URL or token. Closing the tunnel removes connectivity; it does not stop the underlying job. The application does not infer ownership or readiness of every manually specified remote service.
 
-![Sessions with the full-width Login Node Terminal and its red compute warning. The terminal is disconnected in this capture.](figures/04-sessions.png)
+![Sessions with the full-width Login Node Terminal controls, upper terminal pane, and red compute warning. The terminal is disconnected in this capture.](figures/04-sessions.png)
 
 ## 7. Help: command reference and ARC-hosted language models
 
@@ -107,7 +107,7 @@ The v0.1 release build passes 28 Python tests and two Swift terminal tests. Pyth
 
 The native tests verify login-terminal request construction without an allocation requirement and exercise a real local pseudo-terminal: interactive input, a requested terminal size of 42 rows by 140 columns, and process exit. These are targeted regression checks. They do not prove all escape-sequence behavior, SSH authentication combinations, remote policy compliance, or embedded-browser compatibility.
 
-The six figures are captures of the application interface, all captured from the signed release build. They deliberately show offline states and omit live account results and credentials. Screenshots document layout and available controls; they are not measurements of scheduler or API success. Earlier development included remote smoke checks, but this report's quantified release evidence is limited to the test suite stated above.
+The six figures are captures of the application interface, all captured from the signed release build. The images are cropped to remove unused space and pointer/hover overlays. They deliberately show offline states and omit live account results and credentials. Screenshots document layout and available controls; they are not measurements of scheduler or API success. Earlier development included remote smoke checks, but this report's quantified release evidence is limited to the test suite stated above.
 
 The source distribution includes the Swift application, remote helper, native askpass helper, icon generator, tests, build script, vendored terminal source and license, and this report in Markdown, LaTeX, and PDF. SwiftTerm is pinned to v1.20.0 with the documented clipboard-read change. The build targets arm64 and macOS 15.0; the release was built and tested on a newer macOS host, not separately runtime-qualified on every supported OS release.
 
