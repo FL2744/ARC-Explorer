@@ -1,0 +1,22 @@
+{
+  "release": "ARC Explorer v0.1",
+  "version": "0.1.0",
+  "build": "4",
+  "architecture": "arm64",
+  "minimum_macos": "15.0",
+  "developer_team": "HQSX3AJ8U7",
+  "notarization": {
+    "id": "71081a1c-3a09-4922-9705-f325413bf6d5",
+    "status": "Accepted",
+    "message": "Processing complete"
+  },
+  "stapled": true,
+  "gatekeeper": "accepted: Notarized Developer ID",
+  "verified_at_utc": "2026-11-14T04:37:25.307989+00:00",
+  "sha256": {
+    "downloads/ARC-Explorer-v0.1-macOS-arm64.zip": "d191bfec4f50e94616f619a626f0e57a88a6b19d2d2690a54b339c33e83cc72d",
+    "paper/ARC-Explorer.pdf": "5e091f51e72d36a3c70290559fb723ba0639605d216faa067f56e65bd693fc5f",
+    "paper/ARC-Explorer.tex": "fb6a31a57f0821036d0e9423640116537b57b8a8799cdab338191059a87a7915",
+    "paper/TECHNICAL_PAPER.md": "fd22dc4ea4c7aa4f4d83eb89df1c805d13e33d781fdde1ee50cfb43e0fbd82d9"
+  }
+}

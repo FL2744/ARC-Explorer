@@ -14,7 +14,15 @@ tags:
 
 **One workspace for ARC.** A native macOS front end for Virginia Tech Advanced Research Computing.
 
-**Download status:** the Apple Silicon app is built and Developer ID signed. Apple notarization is pending; the final notarized download will be added to the [GitHub release](https://github.com/FL2744/ARC-Explorer/releases) and the [Hugging Face distribution](https://huggingface.co/will-taggart/ARC-Explorer). See [release status](RELEASE_STATUS.md).
+## Download the full app
+
+**[Download ARC Explorer v0.1 for macOS — signed and notarized](https://github.com/FL2744/ARC-Explorer/releases/download/v0.1/ARC-Explorer-v0.1-macOS-arm64.zip)**
+
+[Hugging Face mirror](https://huggingface.co/will-taggart/ARC-Explorer/resolve/main/downloads/ARC-Explorer-v0.1-macOS-arm64.zip?download=true) · [All release files](https://github.com/FL2744/ARC-Explorer/releases/tag/v0.1) · [Checksums](https://github.com/FL2744/ARC-Explorer/releases/download/v0.1/SHA256SUMS.txt)
+
+Apple Silicon · macOS 15+ · approximately 1.9 MB compressed. Unzip the download, drag **ARC-Explorer.app** into Applications, and open it. The archive includes the complete native app and terminal library; no separate local Python installation or model weights are needed.
+
+Developer ID signed, accepted by Apple's notarization service, and stapled. [Release verification](RELEASE_STATUS.md).
 
 **Technical paper:** [PDF](paper/ARC-Explorer.pdf) · [ACM LaTeX](paper/ARC-Explorer.tex) · [Markdown](paper/TECHNICAL_PAPER.md) · [references](paper/references.bib)
 
