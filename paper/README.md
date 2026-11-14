@@ -1,3 +1,5 @@
+<div align="left">
+
 # ARC Explorer technical report
 
 **Technical paper:** [PDF](ARC-Explorer.pdf) · [LaTeX](ARC-Explorer.tex) · [Markdown](TECHNICAL_PAPER.md) · [BibTeX references](references.bib) · [Screenshot illustrations](figures/)
@@ -12,3 +14,5 @@ tectonic paper/ARC-Explorer.tex
 ```
 
 Alternatively, use a current TeX installation with `acmart`, `graphicx`, `xurl`, `placeins`, and BibTeX; run LaTeX, BibTeX, then LaTeX twice from this directory. The Markdown file is the prose source. The generator preserves its sections, citations, and figures in the LaTeX version.
+
+</div>
