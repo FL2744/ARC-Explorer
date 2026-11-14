@@ -1,15 +1,3 @@
----
-language:
-- en
-license: mit
-tags:
-- macos
-- hpc
-- slurm
-- ssh
-- developer-tools
----
-
 <img src="Resources/ARCExplorer.png" alt="ARC Explorer app icon" width="180" />
 
 # ARC Explorer v0.1
