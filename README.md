@@ -10,6 +10,8 @@ tags:
 - developer-tools
 ---
 
+<img src="Resources/ARCExplorer.png" alt="ARC Explorer app icon" width="180" />
+
 # ARC Explorer v0.1
 
 **One workspace for ARC.** A native macOS front end for Virginia Tech Advanced Research Computing.
@@ -26,7 +28,6 @@ Developer ID signed, accepted by Apple's notarization service, and stapled. [Rel
 
 **Technical paper:** [PDF](paper/ARC-Explorer.pdf) · [ACM LaTeX](paper/ARC-Explorer.tex) · [Markdown](paper/TECHNICAL_PAPER.md) · [references](paper/references.bib)
 
-![ARC Explorer Connection workspace](paper/figures/01-connection.png)
 
 ## Five sections
 
