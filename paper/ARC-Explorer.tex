@@ -11,6 +11,20 @@
 \author{William Taggart}
 \affiliation{\department{Modern and Classical Languages and Literatures}\institution{Virginia Tech}\city{Blacksburg}\state{Virginia}\country{USA}}
 \email{wtaggart@vt.edu}
+
+% Permit figures to share pages with surrounding explanatory text.
+\renewcommand{\topfraction}{0.92}
+\renewcommand{\bottomfraction}{0.85}
+\renewcommand{\textfraction}{0.06}
+\renewcommand{\floatpagefraction}{0.80}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{3}
+\setcounter{totalnumber}{5}
+\setlength{\textfloatsep}{12pt plus 2pt minus 3pt}
+\setlength{\intextsep}{12pt plus 2pt minus 3pt}
+\raggedbottom
+
+\geometry{top=0.75in,bottom=0.65in,includeheadfoot}
 \begin{document}
 \begin{abstract}
 ARC Explorer is a native macOS application that brings connection profiles, resource inspection, allocation accounting, GPU job submission, remote files, terminal sessions, web applications, and language-model assistance into one workspace for Virginia Tech Advanced Research Computing (ARC). The client combines SwiftUI, AppKit, WebKit, the system SSH client, and a small remote Python helper. Computational scripts are submitted to Slurm with explicit resource requests, while an integrated login-node terminal supports direct interactive administration. Five main sections organize the workflow: Connection, Resources, Jobs + software, Sessions, and Help. This report describes the implementation, file-editing safeguards, credential boundaries, installation workflow, and release validation. Twenty-eight Python tests and two native terminal tests pass for the release candidate. The evidence establishes functional checks of selected paths, not a performance benchmark, independent security audit, or guarantee of compatibility with every ARC service. Six application screenshots illustrate the workspace.
@@ -48,7 +62,7 @@ The reusable SSH control socket is placed in a private temporary directory. Mult
 
 Light mode is the default, with an explicit dark-mode option. The header uses a bold ARC wordmark and a lighter Explorer wordmark. A resource library and current GPU-request summary provide context across sections. The interface keeps progress and connection state visible without claiming that a queued request is already computing.
 
-\begin{figure}[htbp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/01-connection.png}
 \caption{Connection section showing the saved profile and SSH form. Offline capture of the signed v0.1 build; no password, API key, or private-key contents are shown.}
@@ -67,14 +81,14 @@ The lightweight editor opens UTF-8 text files up to 1 MiB, supports new files an
 
 An opened file is associated with a revision derived from its content hash, device, inode, and modification time. Before replacement, the helper compares the current revision with the expected revision, writes a temporary file in the destination directory, preserves supported permissions and group metadata, flushes it, checks again, and replaces the destination. A detected conflict preserves the remote version. This is optimistic conflict detection; it is not a server-side lock or a proof that all concurrent-writer races are impossible.
 
-\begin{figure}[htbp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/02-resources.png}
 \caption{Cropped Resources detail with allocation and date controls. The offline view contains no account balance or fabricated usage results.}
 \Description{Cropped Resources detail with allocation and date controls. The offline view contains no account balance or fabricated usage results.}
 \end{figure}
 
-\begin{figure}[htbp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/06-file-editor.png}
 \caption{Cropped detail of the remote file browser and lightweight text editor. This offline view illustrates the editing controls, not an active file transaction.}
@@ -95,7 +109,7 @@ Install / update code generates a reviewable script for a GitHub or Hugging Face
 
 Repository retrieval does not automatically run arbitrary setup instructions. The user reviews the generated script, adds needed modules or environment steps, and submits it as a GPU job. Private repositories require suitable remote credentials. The module-discovery controls and command reference help identify available toolchains. The native form is GPU-oriented; a general CPU-only resource form, job arrays, and multi-node configuration are not implemented in v0.1.
 
-\begin{figure}[htbp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/03-jobs-software.png}
 \caption{Jobs + software showing explicit GPU resources and the editable script. The example script has not been submitted in this offline screenshot.}
@@ -114,7 +128,7 @@ Web / Jupyter embeds ARC web applications through WebKit. Open OnDemand provides
 
 For an existing service on an allocated compute node, a tunnel maps a local loopback port through SSH to a user-specified compute host and remote port. Host and port inputs are validated, and the local listener binds to 127.0.0.1. The user must first start the service in the allocation and supply the appropriate URL or token. Closing the tunnel removes connectivity; it does not stop the underlying job. The application does not infer ownership or readiness of every manually specified remote service.
 
-\begin{figure}[htbp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/04-sessions.png}
 \caption{Sessions with the full-width Login Node Terminal controls, upper terminal pane, and red compute warning. The terminal is disconnected in this capture.}
@@ -131,7 +145,7 @@ A request contains the user's typed question and a general ARC-help instruction.
 
 The transport requires HTTPS and refuses HTTP redirects, preventing automatic forwarding of the bearer credential to a redirected destination. API keys remain in memory unless the user explicitly saves one to macOS Keychain. Changing the API base clears the in-memory key. Requests are non-streaming, use a 120-second timeout, and request at most 4,096 output tokens. Errors are surfaced to the user; the assistant is not an autonomous troubleshooting or job-execution agent.
 
-\begin{figure}[htbp]
+\begin{figure}[!htb]
 \centering
 \includegraphics[width=\textwidth,height=0.62\textheight,keepaspectratio]{figures/05-help.png}
 \caption{Help section with the ARC API configuration, model field, and question editor. The API key is empty; no live response is claimed.}
