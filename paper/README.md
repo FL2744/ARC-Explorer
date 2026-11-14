@@ -4,8 +4,6 @@
 
 William Taggart, Modern and Classical Languages and Literatures, Virginia Tech. Email: wtaggart@vt.edu.
 
-This is an independent technical report in ACM manuscript style, not an ACM publication.
-
 Build from the repository root:
 
 ```sh

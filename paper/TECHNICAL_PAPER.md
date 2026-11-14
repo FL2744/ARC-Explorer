@@ -5,7 +5,6 @@ Modern and Classical Languages and Literatures, Virginia Tech
 Email: wtaggart@vt.edu
 
 Technical report · ARC Explorer v0.1 · November 13, 2026  
-ACM manuscript style; this report is not an ACM publication.
 
 ## Abstract
 

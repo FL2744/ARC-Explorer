@@ -19,7 +19,7 @@ out=[r'''\documentclass[manuscript,screen,nonacm]{acmart}
 \setcitestyle{numbers}
 \raggedbottom
 \title{ARC Explorer: A Native macOS Workspace for Remote High-Performance Computing}
-\subtitle{Technical report; ARC Explorer v0.1; November 13, 2026. Not an ACM publication.}
+\subtitle{Technical report; ARC Explorer v0.1; November 13, 2026.}
 \author{William Taggart}
 \affiliation{\department{Modern and Classical Languages and Literatures}\institution{Virginia Tech}\city{Blacksburg}\state{Virginia}\country{USA}}
 \email{wtaggart@vt.edu}

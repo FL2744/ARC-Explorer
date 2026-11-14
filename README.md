@@ -16,7 +16,6 @@ Developer ID signed, accepted by Apple's notarization service, and stapled. [Rel
 
 **Technical paper:** [PDF](paper/ARC-Explorer.pdf) · [LaTeX](paper/ARC-Explorer.tex) · [Markdown](paper/TECHNICAL_PAPER.md) · [references](paper/references.bib)
 
-
 ## Five sections
 
 | Section | Features |
