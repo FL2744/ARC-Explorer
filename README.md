@@ -4,6 +4,8 @@
 
 **One workspace for ARC.** A native macOS front end for Virginia Tech Advanced Research Computing.
 
+Important: this is not an official project that is supported by Virginia Tech or VT ARC. 
+
 ## Download the full app
 
 **[Download ARC Explorer v0.1 for macOS — signed and notarized](https://github.com/FL2744/ARC-Explorer/releases/download/v0.1/ARC-Explorer-v0.1-macOS-arm64.zip)**
