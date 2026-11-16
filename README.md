@@ -4,7 +4,7 @@
 
 **One workspace for ARC.** A native macOS front end for Virginia Tech Advanced Research Computing.
 
-Important: this is not an official project that is supported by Virginia Tech or VT ARC. 
+<span style="color: red;">Important: this is not an official project of Virginia Tech or VT ARC. Do not contact them for support.</span>
 
 ## Download the full app
 
